@@ -14,7 +14,7 @@
   --body-font-family:             'Open Sans', sans-serif;
   --title-font-family:            'Montserrat', sans-serif;
 
-  --h1-font-size:                 58px;
+  --h1-font-size:                 72px;
   --h2-font-size:                 46px;
   --h3-font-size:                 32px;
   --h4-font-size:                 28px;
@@ -63,6 +63,52 @@ h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
 }
+
+/* h1 new stying start  */
+
+.text-white {
+  color: #fff; /* Set text color to white */
+}
+
+.pixelated-text {
+  font-size: 3em;
+  white-space: nowrap;
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+
+/* h1 new styling end */
 
 h2 {
   font-size: var(--h2-font-size);
@@ -508,8 +554,16 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
+.hero_background_image{
+  background-image: url("../images/imageback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 100px 100px;
+}
+
+
 .hero-section {
-  background-image: linear-gradient(224deg, #3f237f 0%, #49e3c2 100%);
+  /* background-image: linear-gradient(224deg, #3f237f 0%, #49e3c2 100%); */
   position: relative;
   overflow: hidden;
   height: 400px;
@@ -518,6 +572,7 @@ strong {
 
 .hero-section h6 {
   color: #d7ca86;
+  font-size: 25px;
 }
 
 .hero-section .input-group {
@@ -539,7 +594,7 @@ strong {
   TOPICS              
 -----------------------------------------*/
 .featured-section {
-  background-image: linear-gradient(330deg, #3f237f 0%, #49e3c2 100%);
+  /* background-image: linear-gradient(330deg, #3f237f 0%, #49e3c2 100%); */
   border-radius: 0 0 100px 100px;
   padding-bottom: 100px;
   height: 300px;
@@ -560,8 +615,11 @@ strong {
   height: 100%;
   text-align: right;
   background-image: linear-gradient(169deg, #84ffe9cf 0%, #0b413b8c 100%);
+  
 
 }
+
+
 
 .explore-section  {
   padding-top: 150px;
@@ -1401,6 +1459,12 @@ strong {
   .hero-section h6 {
     font-size: 22px ;
   }
+
+  .pixelated-text {
+    font-size: 3em;
+    animation: fadeInScale 2s ease-out;
+    white-space: normal;
+}
 
   .featured-section .row {
     margin-left: 0px; 
