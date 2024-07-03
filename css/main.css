@@ -82,7 +82,7 @@ h1 {
 
 @-webkit-keyframes tracking-in-contract {
   0% {
-    letter-spacing: 1em;
+    letter-spacing: 4px;
     opacity: 0;
   }
   40% {
@@ -95,7 +95,7 @@ h1 {
 }
 @keyframes tracking-in-contract {
   0% {
-    letter-spacing: 1em;
+    letter-spacing: 4px;
     opacity: 0;
   }
   40% {
@@ -1324,6 +1324,42 @@ strong {
     line-height: 10px;
   }
 
+  .hero_background_image {
+    background-size: cover;
+    border-radius: 0 0 100px 100px;
+  }
+
+  .tracking-in-contract {
+    -webkit-animation: tracking-in-contract 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-contract 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  
+  @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 4px;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 4px;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
 
   .hero-section h1 {
     font-size: 22px ;
@@ -1465,6 +1501,46 @@ strong {
     animation: fadeInScale 2s ease-out;
     white-space: normal;
 }
+
+/* h1 new stying start  */
+
+.hero_background_image {
+  background-size: initial;
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 10s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 4px;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 4px;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/* h1 new styling end */
 
   .featured-section .row {
     margin-left: 0px; 
